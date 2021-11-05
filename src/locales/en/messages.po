@@ -13,22 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/App.tsx:23
+#: src/App.tsx:20
 msgid "Translation test A"
 msgstr ""
 
-#: src/App.tsx:25
+#: src/App.tsx:22
 msgid "Translation test B"
 msgstr ""
 
-#: src/App.tsx:13
+#: src/App.tsx:12
 msgid "Translation test D"
 msgstr ""
 
-#: src/App.tsx:26
+#: src/App.tsx:24
 msgid "translation_c"
 msgstr "Translation test C"
 
-#: src/App.tsx:14
+#: src/App.tsx:13
 msgid "translation_e"
 msgstr "Translation test E"
