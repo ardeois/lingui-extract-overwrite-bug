@@ -2,7 +2,7 @@ import React from 'react';
 import {t, Trans} from '@lingui/macro';
 import {i18n} from '@lingui/core';
 import {I18nProvider} from '@lingui/react'
-import {messages} from './locales/fr/messages'
+import {messages} from './locales/en/messages'
 import './App.css';
 
 i18n.load('en', messages)
