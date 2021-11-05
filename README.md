@@ -1,6 +1,31 @@
-# Getting Started with Create React App
+# Lingui extract overwrite bug
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project was created to reproduce an issue with Lingui V3 and `lingui extract --overwrite` command
+
+The `--ovewrite` option is supposed to overwrite `msgstr` from `messages.po` and set the value from the code.
+However, for translations without specific `message` it doesn't take the `id` as default value
+
+But if you remove all `msgid` and `msgstr` from the `messapges.po` it works the first time you run the command.
+If you run it a second time, it will reset `msgstr` to empty string
+
+## Steps to reproduce
+
+```shell
+yarn
+yarn extract
+```
+
+Remove all `msgid` and `msgstr` from `en/messages.po`:
+```shell
+yarn extract
+```
+
+Notice `msgstr` are back
+
+run `yarn extract` again
+
+Notice `msgstr` are removed
 
 ## Available Scripts
 
